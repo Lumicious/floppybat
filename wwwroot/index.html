@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=480 height=853 tabindex="-1" style="width: 480px; height: 853px; background: #231F20"></canvas>
-    <script src="Build/Builds.loader.js"></script>
+    <script src="Build/wwwroot.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Builds.data.br",
-        frameworkUrl: "Build/Builds.framework.js.br",
-        codeUrl: "Build/Builds.wasm.br",
+        dataUrl: "Build/wwwroot.data.gz",
+        frameworkUrl: "Build/wwwroot.framework.js.gz",
+        codeUrl: "Build/wwwroot.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "lumlum",
         productName: "Floppy Bat",
