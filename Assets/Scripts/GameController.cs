@@ -55,7 +55,6 @@ public class GameController : MonoBehaviour
         for (var i = 0; i < digits.Count; i++)
             ScoreDigits[i].sprite = Digits[digits[i]];
 
-        Screen.SetResolution(480, 853, false);
         StartCoroutine(FadeCoroutine(true));
         FloppyBatOriginalPos = FloppyBatImage.rectTransform.localPosition;
     }
